@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>MyResume</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 100%;
+      padding: 0;
+      height: 100%;
+    }
+    .resume {
+      margin: auto;
+      border: 1px solid black;
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+    .left {
+      padding: 100px;
+      background-color: rgb(45, 45, 45);
+      width: 30%;
+      height: 100%;
+    }
+    .left .p {
+      font-size: 30px;
+      width: max-content;
+      display: grid;
+      gap: 20px;
+      color: white;
+    }
+    .left .p p {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .left .p p i {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      color: rgb(45, 45, 45);
+      border-radius: 50px;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+    }
+    .left hr {
+      margin-top: 50px;
+      width: 250px;
+    }
+    .left h3 {
+      font-size: 50px;
+      color: white;
+      margin-top: 50px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .left .naviki {
+      width: 100%;
+      font-size: 30px;
+      display: grid;
+      align-items: center;
+      color: white;
+      margin-top: 50px;
+    }
+    .left .naviki span {
+      display: flex;
+      width: 100%;
+      height: 10px;
+      background-color: rgb(115, 115, 115);
+      margin-top: 10px;
+    }
+    .left .naviki:nth-child(4) span::before {
+      width: 63%;
+    }
+    .left .naviki:nth-child(5) span::before {
+      width: 64%;
+    }
+    .left .naviki:nth-child(6) span::before {
+      width: 70%;
+    }
+    .left .naviki:nth-child(7) span::before {
+      width: 70%;
+    }
+    .left .naviki:nth-child(8) span::before {
+      width: 70%;
+    }
+    .left .naviki:nth-child(9) span::before {
+      width: 15%;
+    }
+    .left .naviki:nth-child(10) span::before {
+      width: 10%;
+    }
+    .left .naviki:nth-child(11) span::before {
+      width: 40%;
+    }
+    .left .naviki:nth-child(14) span::before {
+      width: 90%;
+    }
+    .left .naviki:nth-child(15) span::before {
+      width: 60%;
+    }
+    .left .naviki span::before {
+      content: "";
+      width: 0%;
+      height: 10px;
+      background-color: aliceblue;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 100%;
+    }
+    .right .top {
+      width: 100%;
+      height: 15%;
+      background-color: rgb(45, 45, 45);
+    }
+    .right .top {
+      display: grid;
+      align-content: center;
+      padding: 0 50px;
+      gap: 20px;
+      color: white;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      text-transform: uppercase;
+    }
+    .right .top h1 {
+      font-size: 150px;
+    }
+    .right .top h3 {
+      font-size: 50px;
+      font-weight: 100;
+      letter-spacing: 5px;
+    }
+    .right .bottom {
+      width: 100%;
+      height: 85%;
+      background-color: white;
+      border: 30px solid rgb(45, 45, 45);
+      padding: 50px 0 50px 50px;
+    }
+    .right .bottom h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 70px;
+      text-transform: uppercase;
+      font-weight: 100;
+      color: rgb(45, 45, 45);
+    }
+    .right .bottom p {
+      font-size: 30px;
+      font-family: "Courier New", Courier, monospace;
+      line-height: 40px;
+      padding-right: 50px;
+    }
+    .right .bottom hr {
+      width: 100%;
+      margin: 20px 0 40px 0;
+    }
+    ul {
+      padding: 20px 0 20px 50px;
+      font-size: 30px;
+    }
+    ul li p {
+      font-size: 25px !important;
+    }
+  </style>
+  <body style="width: 2480px; height: 3508px">
+    <div class="container">
+      <div class="resume">
+        <div class="left">
+          <div class="p">
+            <p><i class="fa-solid fa-phone"></i> +998900920039</p>
+            <p><i class="fa-solid fa-envelope"></i> sobirovt558@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Fergana, 151600</p>
+          </div>
+          <hr />
+          <h3>Навыки</h3>
+          <p class="naviki">
+            Frontend
+            <span></span>
+          </p>
+          <p class="naviki">
+            HTML
+            <span></span>
+          </p>
+          <p class="naviki">
+            CSS
+            <span></span>
+          </p>
+          <p class="naviki">
+            JavaScript
+            <span></span>
+          </p>
+          <p class="naviki">
+            ReactJs
+            <span></span>
+          </p>
+          <p class="naviki">
+            Pyton
+            <span></span>
+          </p>
+          <p class="naviki">
+            NodeJS
+            <span></span>
+          </p>
+          <p class="naviki">
+            TypeScript
+            <span></span>
+          </p>
+          <hr />
+          <h3>Языки</h3>
+          <p class="naviki">
+            Узбекский язык
+            <span></span>
+          </p>
+          <p class="naviki">
+            Русский язык
+            <span></span>
+          </p>
+        </div>
+        <div class="right">
+          <div class="top">
+            <h1>Тохир Собиров</h1>
+            <h3>Веб-разработчик и Студент</h3>
+          </div>
+          <div class="bottom">
+            <h3>Обо мне</h3>
+            <hr />
+            <p>
+              Меня зовут Тохир, и я с гордостью представляю себя как
+              амбициозного и целеустремленного специалиста в сфере IT. Я родился
+              в поселке Дангара и вырос в Учкупрюке, где самостоятельно изучал
+              язык программирования Python. Я успешно завершил курс по
+              фронтенд-разработке и сейчас продолжаю обучение в ТУИТ. Моя мечта
+              — стать разработчиком игр и полностью овладеть навыками
+              веб-программирования (фуллстек). Я также стремлюсь посетить
+              Японию, либо в роли туриста, либо для работы и жизни. Буду рад
+              познакомиться и обсудить возможности сотрудничества!
+            </p>
+            <br />
+            <br /><br />
+            <br />
+            <h3>Опыт работы</h3>
+            <hr />
+            <p style="font-size: 35px">Статист</p>
+            <p style="font-size: 35px">
+              MIRUS TEXTILE GROUP / Коканд / мар. 2021 - сент. 2021
+            </p>
+            <ul>
+              <li>
+                <p>
+                  Более 3 месяцев опыта работы статистом на фабрике "MIRUS
+                  TEXTILE GROUP", с акцентом на эффективный анализ данных и
+                  сотрудничество в команде.
+                </p>
+              </li>
+            </ul>
+            <br /><br />
+            <br /><br />
+            <h3>Образование</h3>
+            <hr />
+            <p style="font-size: 35px">Аттестат о среднем образовании</p>
+            <p style="font-size: 35px">
+              Средняя школа №28 / Учкупрюкский район / 2020
+            </p>
+            <ul>
+              <li>
+                <p>
+                  Окончил Среднюю школу с обучением на русском языке с высокими
+                  средними оценками (4-5)
+                </p>
+              </li>
+              <li><p>Участник олимпиад по химии</p></li>
+            </ul>
+            <br /><br />
+            <p style="font-size: 35px">
+              Сертификат об окончении IT курса в учебном центре iTeach Academy
+            </p>
+            <p style="font-size: 35px">iTeach Academy /Фергана / 2024</p>
+            <ul>
+              <li>
+                <p>
+                  Успешно завершил курс по Frontend-разработке (React.js,
+                  TypeScript, HTML, CSS, JavaScript) в iTeach Academy, входя в
+                  число лучших студентов.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Прошел практику в компании InSoft, работая над реальными
+                  проектами в области онлайн-маркетинга.
+                </p>
+              </li>
+              <li>
+                <p>В настоящее время обучаюсь Python backend и Node.js.</p>
+              </li>
+            </ul>
+            <br /><br />
+            <p style="font-size: 35px">Студент</p>
+            <p style="font-size: 35px">
+              Ташкентский Университет Информоционных Технологий Ферганский
+              филиал / Фергана / 2026
+            </p>
+            <ul>
+              <li>
+                <p>
+                  Получение высшего образования в ТУИТФФ с фокусом на
+                  телекоммуникациях
+                </p>
+              </li>
+              <li><p>Стремление к высоким академическим результатам</p></li>
+              <li>
+                <p>
+                  Активное участие в проектах для развития практических навыков
+                </p>
+              </li>
+              <li>
+                <p>
+                  Студент факультета телекоммуникационных технологий очной формы
+                  обучения, предполагаемая дата окончания — 2026 год
+                </p>
+              </li>
+              <li>
+                <p>
+                  В 2020 году поступил в Университет ТУИТ Ташкент по направлению
+                  Искусственный интеллект и учился 1 семестр.
+                </p>
+              </li>
+            </ul>
+            <br><br><br><br>
+            <h3>Курс</h3>
+            <hr>
+            <p>WEB-Developer(React)</p>
+            <p>iTeach ACademy / нояб. 2023 - сент. 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
